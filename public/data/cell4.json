@@ -1,0 +1,393 @@
+{
+    "regularPrice": 2300,
+    "finalPrice": 1500,
+    "bundle": {
+      "name": "Dragon Ball Power Bundle",
+      "info": "4 Item Bundle",
+      "image": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_staminastandalone/offerimage.png"
+    },
+    "banner": {
+      "value": "800 V-Bucks Off",
+      "intensity": "Low",
+      "backendValue": "AmountOff"
+    },
+    "giftable": true,
+    "refundable": true,
+    "sortPriority": -1,
+    "categories": null,
+    "sectionId": "DragonBall4",
+    "section": {
+      "id": "DragonBall4",
+      "name": "Dragon Ball",
+      "index": 128,
+      "landingPriority": 1,
+      "sortOffersByOwnership": false,
+      "showIneligibleOffers": true,
+      "showIneligibleOffersIfGiftable": false,
+      "showTimer": true,
+      "enableToastNotification": true,
+      "hidden": false
+    },
+    "devName": "[VIRTUAL]1 x Shenron, 1 x Dragon Radar, 1 x Charging Up, 1 x Boosting Ki for -1 MtxCurrency",
+    "offerId": "v2:/c044b8582fa45a58cef5c27a49cd54f1594f424589d1333401423b0dd858521f",
+    "displayAssetPath": "FortniteGame/Content/Catalog/DisplayAssets/DA_Featured_StaminaMaleStandalone_Bundle",
+    "tileSize": "Normal",
+    "newDisplayAssetPath": "FortniteGame/Content/Catalog/NewDisplayAssets/S23/DAv2_Bundle_Featured_StaminaMaleStandalone",
+    "newDisplayAsset": {
+      "id": "DAv2_Bundle_Featured_StaminaMaleStandalone",
+      "cosmeticId": null,
+      "materialInstances": [
+        {
+          "id": "MI_Bundle_Featured_StaminaStandalone",
+          "images": {
+            "OfferImage": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_staminastandalone/offerimage.png",
+            "FNMTexture": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_0_offerimage_staminaseries_base/fnmtexture.png",
+            "Background": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_staminastandalone/background_v1-2.webp"
+          },
+          "colors": {
+            "Background_Color_A": "003856ff",
+            "Background_Color_B": "0afff5ff",
+            "MF_RadialCoordinates": "b288bcff",
+            "ColorCircuitBackground": "ffe700ff",
+            "ColorCircuitBackground2": "ffffffff",
+            "RGB3": "fab800ff",
+            "RGB4": "ffffffff",
+            "RGB5": "a65f00ff",
+            "TextilePanSpeed": "000000ff",
+            "TextilePerspective": "00000000",
+            "TextileScale": "ffff0000",
+            "FallOff_Color": "3fb2ffff"
+          },
+          "scalings": {
+            "Gradient_Hardness": 6.754522,
+            "Gradient_Position_X": 50,
+            "Gradient_Position_Y": 39.213978,
+            "Gradient_Size": 69.49049,
+            "Spotlight_Intensity": 228.48459,
+            "Spotlight_Position_X": 28.912664,
+            "Spotlight_Position_Y": 46.404694,
+            "Spotlight_Size": 206.98637,
+            "OffsetImage_X": -5,
+            "OffsetImage_Y": 1,
+            "ZoomImage_Percent": 27.20002,
+            "RefractionDepthBias": 0,
+            "Background-Balance": 0.0125,
+            "Vignette Density": 3,
+            "Vignette Radius": 1.340641,
+            "Vignette-Strength": 1.508272,
+            "ContrastBackground2": 45.19536,
+            "Falloff": -0.569914,
+            "Intensity": -0.707744,
+            "RadialDensity_02": 0.565145,
+            "RadialRadius_02": 0.836266,
+            "Subtract": 0.955018,
+            "Vignette_G_Position_Y": -1.242276,
+            "Vignette_G_Power": 4.663352,
+            "Vignette_G_Radius": 1.586238,
+            "Vignette_G_Scale_X": 1.197729,
+            "Vignette_R_Power": 4.323008,
+            "Vignette_R_Radius": 0.5,
+            "Vignette_R_Scale_Y": 2.147519,
+            "GradientAngle": -94.19608,
+            "GradientScale": 2.292203,
+            "FallOffColor_DecayRate": 1.22,
+            "FallOffColor_Fill_Percent": 25,
+            "FallOffColor_Postion": 40,
+            "OffsetImage_Y_Compensation": -7.848606,
+            "Scale_Compensation": -4.65742,
+            "Density-Enhanced": 0,
+            "Effect-Bump-Multiply": 512,
+            "Effect-Time-Factor": 0.5,
+            "Radius-Enhanced": 0.6,
+            "Sine Offset": 0.5,
+            "Streak Angle": 0.6,
+            "Streak Power Angle": 0.15,
+            "Streak-G-Multiply-Max": 1,
+            "Streak-G-Multiply-Min": 0.1,
+            "Streak-G-Power-Max": 1.5,
+            "Streak-G-Power_Min": 1,
+            "Streak-G-U-Offset": 0.35,
+            "Streak-G-U-Tile": 1.5,
+            "Streak-G-V-Offset": 0.5,
+            "Streak-G-V-Tile": 0.325,
+            "Streak-R-Multiply-Max": 1,
+            "Streak-R-Multiply-Min": 0.1,
+            "Streak-R-Power-Max": 3,
+            "Streak-R-Power-Min": 2,
+            "Streak-R-U-Offset": -0.125,
+            "Streak-R-U-Tile": 0.5,
+            "Streak-R-V-Offset": 0,
+            "Streak-R-V-Tile": 0.25,
+            "Darken": 0.3,
+            "TextileInvertAngle": -0.883333,
+            "TextilePatternRepeat": 5
+          },
+          "flags": null
+        }
+      ]
+    },
+    "items": [
+      {
+        "id": "Glider_ID_386_StaminaMaleStandalone",
+        "name": "Shenron",
+        "description": "A dragon that grants a wish when all 7 Dragon Balls are together.",
+        "type": {
+          "value": "glider",
+          "displayValue": "Glider",
+          "backendValue": "AthenaGlider"
+        },
+        "rarity": {
+          "value": "epic",
+          "displayValue": "Epic",
+          "backendValue": "EFortRarity::Epic"
+        },
+        "series": null,
+        "set": {
+          "value": "Dragon Ball",
+          "text": "Part of the Dragon Ball set.",
+          "backendValue": "WordRemark"
+        },
+        "introduction": {
+          "chapter": "3",
+          "season": "3",
+          "text": "Introduced in Chapter 3, Season 3.",
+          "backendValue": 21
+        },
+        "images": {
+          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/glider_id_386_staminamalestandalone/smallicon.png",
+          "icon": "https://fortnite-api.com/images/cosmetics/br/glider_id_386_staminamalestandalone/icon.png",
+          "featured": "https://fortnite-api.com/images/cosmetics/br/glider_id_386_staminamalestandalone/featured.png",
+          "other": null
+        },
+        "variants": null,
+        "searchTags": null,
+        "gameplayTags": [
+          "Cosmetics.Source.Event",
+          "Cosmetics.Filter.Season.21",
+          "Cosmetics.Set.WordRemark"
+        ],
+        "metaTags": null,
+        "showcaseVideo": "LfpyoAC9rAY",
+        "dynamicPakId": null,
+        "displayAssetPath": null,
+        "definitionPath": null,
+        "path": "FortniteGame/Content/Athena/Items/Cosmetics/Gliders/Glider_ID_386_StaminaMaleStandalone",
+        "added": "2022-08-16T10:25:32Z",
+        "shopHistory": [
+          "2022-12-31T00:00:00Z",
+          "2023-01-01T00:00:00Z",
+          "2023-01-02T00:00:00Z",
+          "2023-01-03T00:00:00Z",
+          "2023-01-04T00:00:00Z",
+          "2023-02-09T00:00:00Z",
+          "2023-02-10T00:00:00Z",
+          "2023-02-11T00:00:00Z",
+          "2023-02-12T00:00:00Z",
+          "2023-02-13T00:00:00Z",
+          "2023-05-20T00:00:00Z",
+          "2023-05-21T00:00:00Z",
+          "2023-05-22T00:00:00Z",
+          "2023-05-23T00:00:00Z",
+          "2023-05-24T00:00:00Z",
+          "2023-10-20T00:00:00Z"
+        ]
+      },
+      {
+        "id": "BID_A_056_StaminaFemale",
+        "name": "Dragon Radar",
+        "description": "Tracks the location of the seven dragon balls.",
+        "type": {
+          "value": "backpack",
+          "displayValue": "Back Bling",
+          "backendValue": "AthenaBackpack"
+        },
+        "rarity": {
+          "value": "rare",
+          "displayValue": "Rare",
+          "backendValue": "EFortRarity::Rare"
+        },
+        "series": null,
+        "set": {
+          "value": "Dragon Ball",
+          "text": "Part of the Dragon Ball set.",
+          "backendValue": "WordRemark"
+        },
+        "introduction": {
+          "chapter": "3",
+          "season": "3",
+          "text": "Introduced in Chapter 3, Season 3.",
+          "backendValue": 21
+        },
+        "images": {
+          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/bid_a_056_staminafemale/smallicon.png",
+          "icon": "https://fortnite-api.com/images/cosmetics/br/bid_a_056_staminafemale/icon.png",
+          "featured": null,
+          "other": null
+        },
+        "variants": null,
+        "searchTags": null,
+        "gameplayTags": [
+          "Cosmetics.Set.WordRemark",
+          "Cosmetics.Source.ItemShop",
+          "Cosmetics.Filter.Season.21"
+        ],
+        "metaTags": null,
+        "showcaseVideo": "6N92NnimOxk",
+        "dynamicPakId": null,
+        "displayAssetPath": null,
+        "definitionPath": null,
+        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Backpacks/BID_A_056_StaminaFemale",
+        "added": "2022-08-16T10:25:32Z",
+        "shopHistory": [
+          "2022-12-31T00:00:00Z",
+          "2023-01-01T00:00:00Z",
+          "2023-01-02T00:00:00Z",
+          "2023-01-03T00:00:00Z",
+          "2023-01-04T00:00:00Z",
+          "2023-02-09T00:00:00Z",
+          "2023-02-10T00:00:00Z",
+          "2023-02-11T00:00:00Z",
+          "2023-02-12T00:00:00Z",
+          "2023-02-13T00:00:00Z",
+          "2023-05-20T00:00:00Z",
+          "2023-05-21T00:00:00Z",
+          "2023-05-22T00:00:00Z",
+          "2023-05-23T00:00:00Z",
+          "2023-05-24T00:00:00Z",
+          "2023-10-20T00:00:00Z"
+        ]
+      },
+      {
+        "id": "EID_Energize",
+        "name": "Charging Up",
+        "description": "Amplify your ki.",
+        "type": {
+          "value": "emote",
+          "displayValue": "Emote",
+          "backendValue": "AthenaDance"
+        },
+        "rarity": {
+          "value": "rare",
+          "displayValue": "Rare",
+          "backendValue": "EFortRarity::Rare"
+        },
+        "series": null,
+        "set": {
+          "value": "Dragon Ball",
+          "text": "Part of the Dragon Ball set.",
+          "backendValue": "WordRemark"
+        },
+        "introduction": {
+          "chapter": "3",
+          "season": "3",
+          "text": "Introduced in Chapter 3, Season 3.",
+          "backendValue": 21
+        },
+        "images": {
+          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/eid_energize/smallicon.png",
+          "icon": "https://fortnite-api.com/images/cosmetics/br/eid_energize/icon.png",
+          "featured": "https://fortnite-api.com/images/cosmetics/br/eid_energize/featured.png",
+          "other": null
+        },
+        "variants": null,
+        "searchTags": null,
+        "gameplayTags": [
+          "Cosmetics.EmoteType.Dance",
+          "Cosmetics.Source.ItemShop",
+          "Cosmetics.Set.WordRemark",
+          "Cosmetics.Filter.Season.21"
+        ],
+        "metaTags": null,
+        "showcaseVideo": "PBlg10SFo5U",
+        "dynamicPakId": null,
+        "displayAssetPath": null,
+        "definitionPath": null,
+        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Dances/EID_Energize",
+        "added": "2022-08-16T10:25:32Z",
+        "shopHistory": [
+          "2022-12-31T00:00:00Z",
+          "2023-01-01T00:00:00Z",
+          "2023-01-02T00:00:00Z",
+          "2023-01-03T00:00:00Z",
+          "2023-01-04T00:00:00Z",
+          "2023-02-09T00:00:00Z",
+          "2023-02-10T00:00:00Z",
+          "2023-02-11T00:00:00Z",
+          "2023-02-12T00:00:00Z",
+          "2023-02-13T00:00:00Z",
+          "2023-05-20T00:00:00Z",
+          "2023-05-21T00:00:00Z",
+          "2023-05-22T00:00:00Z",
+          "2023-05-23T00:00:00Z",
+          "2023-05-24T00:00:00Z",
+          "2023-10-20T00:00:00Z"
+        ]
+      },
+      {
+        "id": "EID_EnergizeStoic",
+        "name": "Boosting Ki",
+        "description": "Show off your power.",
+        "type": {
+          "value": "emote",
+          "displayValue": "Emote",
+          "backendValue": "AthenaDance"
+        },
+        "rarity": {
+          "value": "rare",
+          "displayValue": "Rare",
+          "backendValue": "EFortRarity::Rare"
+        },
+        "series": null,
+        "set": {
+          "value": "Dragon Ball",
+          "text": "Part of the Dragon Ball set.",
+          "backendValue": "WordRemark"
+        },
+        "introduction": {
+          "chapter": "3",
+          "season": "3",
+          "text": "Introduced in Chapter 3, Season 3.",
+          "backendValue": 21
+        },
+        "images": {
+          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/eid_energizestoic/smallicon.png",
+          "icon": "https://fortnite-api.com/images/cosmetics/br/eid_energizestoic/icon.png",
+          "featured": "https://fortnite-api.com/images/cosmetics/br/eid_energizestoic/featured.png",
+          "other": null
+        },
+        "variants": null,
+        "searchTags": null,
+        "gameplayTags": [
+          "Cosmetics.EmoteType.Dance",
+          "Cosmetics.Source.ItemShop",
+          "Cosmetics.Set.WordRemark",
+          "Cosmetics.Filter.Season.21"
+        ],
+        "metaTags": null,
+        "showcaseVideo": "44vGBNhXim4",
+        "dynamicPakId": null,
+        "displayAssetPath": null,
+        "definitionPath": null,
+        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Dances/EID_EnergizeStoic",
+        "added": "2022-08-16T10:25:32Z",
+        "shopHistory": [
+          "2022-12-31T00:00:00Z",
+          "2023-01-01T00:00:00Z",
+          "2023-01-02T00:00:00Z",
+          "2023-01-03T00:00:00Z",
+          "2023-01-04T00:00:00Z",
+          "2023-02-09T00:00:00Z",
+          "2023-02-10T00:00:00Z",
+          "2023-02-11T00:00:00Z",
+          "2023-02-12T00:00:00Z",
+          "2023-02-13T00:00:00Z",
+          "2023-05-20T00:00:00Z",
+          "2023-05-21T00:00:00Z",
+          "2023-05-22T00:00:00Z",
+          "2023-05-23T00:00:00Z",
+          "2023-05-24T00:00:00Z",
+          "2023-10-20T00:00:00Z"
+        ]
+      }
+    ]
+  }
