@@ -1,5 +1,3 @@
-
-
 const apiUrl = "https://fortnite-api.com/v2/shop/br";
 
 async function getDataFromAPI() {
@@ -35,6 +33,7 @@ async function landingArr() {
       res.push(items[i].section.index);
     }
   }
+  console.log(items)
   var result = [];
   for (var i = 0; i < res.length; i++) {
     var tmp_arr = [];
@@ -55,59 +54,14 @@ async function getById(id) {
   return matchedItem;
 }
 
-exports.getShopPage = async function (req, res) {
-  var items = await landingArr()
+async function mdl_shopData(req, res, next) {
   try {
-    res.render("shop", {
-      title: "This is my test.",
-      filterStt: "landing",
-      cards: items,
-    });
+    req.items = await landingArr()
+    console.log(req.items)
+    next();
   } catch (error) {
-    console.log("Error shopController/getShopPage");
+    
   }
-};
+}
 
-exports.getWebmanifest = function (req, res) {
-  res.json({
-    name: "Fortnite.GG",
-    short_name: "Fortnite.GG",
-    start_url: "https://localhost:8000",
-    icons: [
-      {
-        src: "https://localhost:8000/android-chrome-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "https://localhost:8000/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-    theme_color: "#2f3136",
-    background_color: "#2f3136",
-    display: "standalone",
-    categories: ["games", "entertainment"],
-    scope: "https://localhost:8000/",
-  });
-};
-
-exports.getItemDetails = async function (req, res) {
-
-    res.send(req.item);
-};
-
-exports.getMapPage = async function (req, res) {
-  res.render("index", {
-    title: "",
-  });
-};
-
-exports.getCosmeticsPage = function (req, res) {
-  res.render("cosmetics", {
-    title: "",
-    filter: "default",
-    item: "",
-  });
-};
+module.exports = mdl_shopData;

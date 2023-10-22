@@ -44,7 +44,6 @@ async function landingArr() {
       }
       result.push(tmp_arr);
   }
-  console.log(result)
   return result;
 }
 

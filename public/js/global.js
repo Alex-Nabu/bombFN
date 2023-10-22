@@ -44,7 +44,7 @@ window.addEventListener("popstate", function() {
 });
 var modalAd = null;
 function modal(L, e, b="", x={}) {
-    
+    console.log(L);
     closeModal(!0);
     var t = "";
     "img" === e ? t = '<img src="https://fortnite.gg' + L + '">' : "video" === e ? t = '<video loop autoplay playsinline src="' + L + '" onclick="this.paused ? this.play() : this.pause()"></video>' : "video-controls" === e ? t = '<video controls loop autoplay playsinline src="' + L + '"></video>' : "item" === e ? (t = "", b = "/cosmetics?id=" + L, window.ga && ga("send", "pageview", b)) : t = "yt" === e ? (ajax("/log", null, "event=yt." + L), vmRemove(), window.adMap && window.top.__vm_remove.push(window.adMap),'<div><div class="iframe-container"><iframe src="https://www.youtube.com/embed/' + L + (~L.indexOf("?") ? "&" : "?") + 'autoplay=1&rel=0&playsinline=1&modestbranding=1" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>') : "page" === e ? '<iframe style="width:100vw;height:100vh;" src="' + L + '"></iframe>' : "wiki" === e ? '<iframe style="width:80vw;height:80vh;border-radius:8px;" src="https://en.m.wikipedia.org/wiki/' + L + '"></iframe>' : "twitter" === e ? '<div id="twitter-container" style="width:540px;max-width:100%;"></div>' : L, b && history.pushState(null, null, b);
@@ -274,8 +274,7 @@ function modal(L, e, b="", x={}) {
     window.storedVotes = {},
     localStorage["fngg_" + window.storedType + "_votes"] && (window.storedVotes = JSON.parse(localStorage["fngg_" + window.storedType + "_votes"]))),
     x.cache ? (t = ModalItemsCache.get(L)) ? o(t) : x.target && x.target.addEventListener("modalItemLoaded", ()=>o(ModalItemsCache.get(L))) : ajax("/item-details?id=" + L + (Url.startsWith("/shop") ? "&shop" : ""), async function(e) {
-        alert("/item-details?id=" + L + (Url.startsWith("/shop") ? "&shop" : ""))
-        o(e.responseText)
+        o(e.responseText.replaceAll("src='/img/items", "src='https://fortnite.gg/img/items"));
     })),
     !1
 }
