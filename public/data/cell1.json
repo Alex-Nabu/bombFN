@@ -1,482 +1,116 @@
 {
-    "regularPrice": 3100,
-    "finalPrice": 2100,
-    "bundle": {
-      "name": "MR. MEESEEKS BUNDLE",
-      "info": "4 Item Bundle",
-      "image": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_geniusblob/offerimage.png"
-    },
-    "banner": {
-      "value": "1000 V-Bucks Off",
-      "intensity": "Low",
-      "backendValue": "AmountOff"
-    },
-    "giftable": true,
-    "refundable": true,
-    "sortPriority": -1,
-    "categories": null,
-    "sectionId": "RickMorty2B",
-    "section": {
+  "mainId": "Character_GeniusBlob",
+  "displayName": "Mr. Meeseeks",
+  "displayDescription": "Look at me!",
+  "displayType": "Outfit",
+  "mainType": "outfit",
+  "offerId": "v2:/8ed01ebd25d44b1cd247f795104ebcba4481fa845301466c37064101c327ca53",
+  "displayAssets": [
+      {
+          "displayAsset": "DAv2_Character_GeniusBlob",
+          "materialInstance": "MI_Character_GeniusBlob",
+          "url": "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_Character_GeniusBlob/MI_Character_GeniusBlob.png",
+          "flipbook": null,
+          "background_texture": null,
+          "background": "https://media.fortniteapi.io/images/shop/8ed01ebd25d44b1cd247f795104ebcba4481fa845301466c37064101c327ca53/v2/MI_Character_GeniusBlob/background.png",
+          "full_background": "https://media.fortniteapi.io/images/shop/8ed01ebd25d44b1cd247f795104ebcba4481fa845301466c37064101c327ca53/v2/MI_Character_GeniusBlob/info.en.png"
+      }
+  ],
+  "firstReleaseDate": "2022-10-18",
+  "previousReleaseDate": "2023-10-22",
+  "giftAllowed": true,
+  "buyAllowed": true,
+  "price": {
+      "regularPrice": 1500,
+      "finalPrice": 1500,
+      "floorPrice": 1500
+  },
+  "rarity": {
+      "id": "Epic",
+      "name": "Epic"
+  },
+  "series": null,
+  "banner": null,
+  "offerTag": null,
+  "granted": [
+      {
+          "id": "Character_GeniusBlob",
+          "type": {
+              "id": "outfit",
+              "name": "Outfit"
+          },
+          "name": "Mr. Meeseeks",
+          "description": "Look at me!",
+          "rarity": {
+              "id": "Epic",
+              "name": "Epic"
+          },
+          "series": null,
+          "images": {
+              "icon": "https://media.fortniteapi.io/images/18d5ce3a064b23cb681330d4ee6430e4/transparent.png",
+              "featured": "https://media.fortniteapi.io/images/18d5ce3a064b23cb681330d4ee6430e4/full_featured.png",
+              "background": "https://media.fortniteapi.io/images/cosmetics/18d5ce3a064b23cb681330d4ee6430e4/v2/background.png",
+              "icon_background": "https://media.fortniteapi.io/images/cosmetics/18d5ce3a064b23cb681330d4ee6430e4/v2/icon_background.png",
+              "full_background": "https://media.fortniteapi.io/images/cosmetics/18d5ce3a064b23cb681330d4ee6430e4/v2/info.en.png"
+          },
+          "video": null,
+          "audio": null,
+          "gameplayTags": [
+              "Cosmetics.Filter.Season.22",
+              "Cosmetics.Source.ItemShop",
+              "Cosmetics.Set.MainStake",
+              "SoundLibrary.ID.StepType.Barefoot",
+              "SoundLibrary.ID.ClothingType.Generic",
+              "SoundLibrary.ID.HandType.Bare"
+          ],
+          "set": {
+              "id": "MainStake",
+              "name": "Mr. Meeseeks",
+              "partOf": "Part of the Mr. Meeseeks set."
+          }
+      },
+      {
+          "id": "Backpack_Genius_Blob",
+          "type": {
+              "id": "backpack",
+              "name": "BackBling"
+          },
+          "name": "Meeseeks' Box",
+          "description": "Contains: Infinite Meeseeks",
+          "rarity": {
+              "id": "Epic",
+              "name": "Epic"
+          },
+          "series": null,
+          "images": {
+              "icon": "https://media.fortniteapi.io/images/81823d5aed8f8748fcfa751edb4ab09b/transparent.png",
+              "featured": null,
+              "background": "https://media.fortniteapi.io/images/cosmetics/81823d5aed8f8748fcfa751edb4ab09b/v2/background.png",
+              "icon_background": "https://media.fortniteapi.io/images/cosmetics/81823d5aed8f8748fcfa751edb4ab09b/v2/icon_background.png",
+              "full_background": "https://media.fortniteapi.io/images/cosmetics/81823d5aed8f8748fcfa751edb4ab09b/v2/info.en.png"
+          },
+          "video": null,
+          "audio": null,
+          "gameplayTags": [
+              "Cosmetics.Filter.Season.22",
+              "Cosmetics.Source.ItemShop",
+              "Cosmetics.Set.MainStake"
+          ],
+          "set": {
+              "id": "MainStake",
+              "name": "Mr. Meeseeks",
+              "partOf": "Part of the Mr. Meeseeks set."
+          }
+      }
+  ],
+  "priority": -2,
+  "section": {
       "id": "RickMorty2B",
       "name": "Rick and Morty",
-      "index": 202,
-      "landingPriority": 1,
-      "sortOffersByOwnership": false,
-      "showIneligibleOffers": true,
-      "showIneligibleOffersIfGiftable": false,
-      "showTimer": true,
-      "enableToastNotification": true,
-      "hidden": false
-    },
-    "devName": "[VIRTUAL]1 x Mr. Meeseeks, 1 x Meeseeks' Box, 1 x Summoned Katana, 1 x Meeseeks Manifest for -1 MtxCurrency",
-    "offerId": "v2:/8141939bd52b10f041e9f14aa82eac5e0a28b2186a019c88688c4bf3401ef909",
-    "displayAssetPath": "FortniteGame/Content/Catalog/DisplayAssets/DA_Featured_GeniusBlob_Bundle",
-    "tileSize": "DoubleWide",
-    "newDisplayAssetPath": "FortniteGame/Content/Catalog/NewDisplayAssets/S22/DAv2_Bundle_Featured_GeniusBlob",
-    "newDisplayAsset": {
-      "id": "DAv2_Bundle_Featured_GeniusBlob",
-      "cosmeticId": null,
-      "materialInstances": [
-        {
-          "id": "MI_Bundle_Featured_GeniusBlob",
-          "images": {
-            "OfferImage": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_geniusblob/offerimage.png",
-            "Background": "https://fortnite-api.com/images/cosmetics/br/materialinstances/mi_bundle_featured_geniusblob/background_v1-2.webp"
-          },
-          "colors": {
-            "FallOff_Color": "3fb2ffff",
-            "Background_Color_A": "378dd5ff",
-            "Background_Color_B": "003cffff"
-          },
-          "scalings": {
-            "FallOffColor_Fill_Percent": 25,
-            "FallOffColor_Postion": 40,
-            "OffsetImage_X": 0,
-            "OffsetImage_Y": 3,
-            "ZoomImage_Percent": -19.60001,
-            "RefractionDepthBias": 0,
-            "Gradient_Hardness": 15,
-            "Gradient_Position_X": 50,
-            "Gradient_Position_Y": 40,
-            "Gradient_Size": 77,
-            "OffsetImage_Y_Compensation": 22,
-            "Scale_Compensation": -70
-          },
-          "flags": null
-        }
-      ]
-    },
-    "items": [
-      {
-        "id": "Character_GeniusBlob",
-        "name": "Mr. Meeseeks",
-        "description": "Look at me!",
-        "type": {
-          "value": "outfit",
-          "displayValue": "Outfit",
-          "backendValue": "AthenaCharacter"
-        },
-        "rarity": {
-          "value": "epic",
-          "displayValue": "Epic",
-          "backendValue": "EFortRarity::Epic"
-        },
-        "series": null,
-        "set": {
-          "value": "Mr. Meeseeks",
-          "text": "Part of the Mr. Meeseeks set.",
-          "backendValue": "MainStake"
-        },
-        "introduction": {
-          "chapter": "3",
-          "season": "4",
-          "text": "Introduced in Chapter 3, Season 4.",
-          "backendValue": 22
-        },
-        "images": {
-          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/character_geniusblob/smallicon.png",
-          "icon": "https://fortnite-api.com/images/cosmetics/br/character_geniusblob/icon.png",
-          "featured": "https://fortnite-api.com/images/cosmetics/br/character_geniusblob/featured.png",
-          "other": null
-        },
-        "variants": null,
-        "searchTags": null,
-        "gameplayTags": [
-          "Cosmetics.Filter.Season.22",
-          "Cosmetics.Source.ItemShop",
-          "Cosmetics.Set.MainStake",
-          "SoundLibrary.ID.StepType.Barefoot",
-          "SoundLibrary.ID.ClothingType.Generic",
-          "SoundLibrary.ID.HandType.Bare"
-        ],
-        "metaTags": [
-          "Cosmetics.Emote.CharacterGroup.BigHead"
-        ],
-        "showcaseVideo": null,
-        "dynamicPakId": null,
-        "displayAssetPath": null,
-        "definitionPath": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Heroes/Hero_GeniusBlob",
-        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Characters/Character_GeniusBlob",
-        "added": "2022-10-18T23:49:57Z",
-        "shopHistory": [
-          "2022-10-18T00:00:00Z",
-          "2022-10-19T00:00:00Z",
-          "2022-10-20T00:00:00Z",
-          "2022-10-21T00:00:00Z",
-          "2022-10-22T00:00:00Z",
-          "2022-10-23T00:00:00Z",
-          "2022-10-24T00:00:00Z",
-          "2022-10-25T00:00:00Z",
-          "2022-10-26T00:00:00Z",
-          "2022-10-27T00:00:00Z",
-          "2022-10-28T00:00:00Z",
-          "2022-10-29T00:00:00Z",
-          "2022-10-30T00:00:00Z",
-          "2022-10-31T00:00:00Z",
-          "2022-11-01T00:00:00Z",
-          "2022-11-02T00:00:00Z",
-          "2022-11-03T00:00:00Z",
-          "2022-11-04T00:00:00Z",
-          "2022-11-05T00:00:00Z",
-          "2022-11-06T00:00:00Z",
-          "2022-11-07T00:00:00Z",
-          "2022-11-08T00:00:00Z",
-          "2022-11-09T00:00:00Z",
-          "2022-11-10T00:00:00Z",
-          "2022-11-11T00:00:00Z",
-          "2022-11-12T00:00:00Z",
-          "2022-11-13T00:00:00Z",
-          "2022-11-14T00:00:00Z",
-          "2022-12-01T00:00:00Z",
-          "2022-12-02T00:00:00Z",
-          "2022-12-03T00:00:00Z",
-          "2022-12-04T00:00:00Z",
-          "2022-12-05T00:00:00Z",
-          "2022-12-06T00:00:00Z",
-          "2022-12-07T00:00:00Z",
-          "2022-12-08T00:00:00Z",
-          "2022-12-09T00:00:00Z",
-          "2022-12-10T00:00:00Z",
-          "2022-12-11T00:00:00Z",
-          "2022-12-12T00:00:00Z",
-          "2022-12-13T00:00:00Z",
-          "2022-12-14T00:00:00Z",
-          "2023-09-03T00:00:00Z",
-          "2023-09-04T00:00:00Z",
-          "2023-09-05T00:00:00Z",
-          "2023-09-06T00:00:00Z",
-          "2023-09-07T00:00:00Z",
-          "2023-09-08T00:00:00Z",
-          "2023-10-17T00:00:00Z",
-          "2023-10-18T00:00:00Z",
-          "2023-10-19T00:00:00Z",
-          "2023-10-20T00:00:00Z"
-        ]
-      },
-      {
-        "id": "Backpack_Genius_Blob",
-        "name": "Meeseeks' Box",
-        "description": "Contains: Infinite Meeseeks",
-        "type": {
-          "value": "backpack",
-          "displayValue": "Back Bling",
-          "backendValue": "AthenaBackpack"
-        },
-        "rarity": {
-          "value": "epic",
-          "displayValue": "Epic",
-          "backendValue": "EFortRarity::Epic"
-        },
-        "series": null,
-        "set": {
-          "value": "Mr. Meeseeks",
-          "text": "Part of the Mr. Meeseeks set.",
-          "backendValue": "MainStake"
-        },
-        "introduction": {
-          "chapter": "3",
-          "season": "4",
-          "text": "Introduced in Chapter 3, Season 4.",
-          "backendValue": 22
-        },
-        "images": {
-          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/backpack_genius_blob/smallicon.png",
-          "icon": "https://fortnite-api.com/images/cosmetics/br/backpack_genius_blob/icon.png",
-          "featured": null,
-          "other": null
-        },
-        "variants": null,
-        "searchTags": null,
-        "gameplayTags": [
-          "Cosmetics.Filter.Season.22",
-          "Cosmetics.Source.ItemShop",
-          "Cosmetics.Set.MainStake"
-        ],
-        "metaTags": null,
-        "showcaseVideo": null,
-        "dynamicPakId": null,
-        "itemPreviewHeroPath": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Characters/Character_GeniusBlob",
-        "displayAssetPath": null,
-        "definitionPath": null,
-        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Backpacks/Backpack_Genius_Blob",
-        "added": "2022-10-18T23:49:57Z",
-        "shopHistory": [
-          "2022-10-18T00:00:00Z",
-          "2022-10-19T00:00:00Z",
-          "2022-10-20T00:00:00Z",
-          "2022-10-21T00:00:00Z",
-          "2022-10-22T00:00:00Z",
-          "2022-10-23T00:00:00Z",
-          "2022-10-24T00:00:00Z",
-          "2022-10-25T00:00:00Z",
-          "2022-10-26T00:00:00Z",
-          "2022-10-27T00:00:00Z",
-          "2022-10-28T00:00:00Z",
-          "2022-10-29T00:00:00Z",
-          "2022-10-30T00:00:00Z",
-          "2022-10-31T00:00:00Z",
-          "2022-11-01T00:00:00Z",
-          "2022-11-02T00:00:00Z",
-          "2022-11-03T00:00:00Z",
-          "2022-11-04T00:00:00Z",
-          "2022-11-05T00:00:00Z",
-          "2022-11-06T00:00:00Z",
-          "2022-11-07T00:00:00Z",
-          "2022-11-08T00:00:00Z",
-          "2022-11-09T00:00:00Z",
-          "2022-11-10T00:00:00Z",
-          "2022-11-11T00:00:00Z",
-          "2022-11-12T00:00:00Z",
-          "2022-11-13T00:00:00Z",
-          "2022-11-14T00:00:00Z",
-          "2022-12-01T00:00:00Z",
-          "2022-12-02T00:00:00Z",
-          "2022-12-03T00:00:00Z",
-          "2022-12-04T00:00:00Z",
-          "2022-12-05T00:00:00Z",
-          "2022-12-06T00:00:00Z",
-          "2022-12-07T00:00:00Z",
-          "2022-12-08T00:00:00Z",
-          "2022-12-09T00:00:00Z",
-          "2022-12-10T00:00:00Z",
-          "2022-12-11T00:00:00Z",
-          "2022-12-12T00:00:00Z",
-          "2022-12-13T00:00:00Z",
-          "2022-12-14T00:00:00Z",
-          "2023-09-03T00:00:00Z",
-          "2023-09-04T00:00:00Z",
-          "2023-09-05T00:00:00Z",
-          "2023-09-06T00:00:00Z",
-          "2023-09-07T00:00:00Z",
-          "2023-09-08T00:00:00Z",
-          "2023-10-17T00:00:00Z",
-          "2023-10-18T00:00:00Z",
-          "2023-10-19T00:00:00Z",
-          "2023-10-20T00:00:00Z"
-        ]
-      },
-      {
-        "id": "Pickaxe_Genius_Blob",
-        "name": "Summoned Katana",
-        "description": "Katana beats bottle.",
-        "type": {
-          "value": "pickaxe",
-          "displayValue": "Pickaxe",
-          "backendValue": "AthenaPickaxe"
-        },
-        "rarity": {
-          "value": "rare",
-          "displayValue": "Rare",
-          "backendValue": "EFortRarity::Rare"
-        },
-        "series": null,
-        "set": {
-          "value": "Mr. Meeseeks",
-          "text": "Part of the Mr. Meeseeks set.",
-          "backendValue": "MainStake"
-        },
-        "introduction": {
-          "chapter": "3",
-          "season": "4",
-          "text": "Introduced in Chapter 3, Season 4.",
-          "backendValue": 22
-        },
-        "images": {
-          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/pickaxe_genius_blob/smallicon.png",
-          "icon": "https://fortnite-api.com/images/cosmetics/br/pickaxe_genius_blob/icon.png",
-          "featured": "https://fortnite-api.com/images/cosmetics/br/pickaxe_genius_blob/featured.png",
-          "other": null
-        },
-        "variants": null,
-        "searchTags": null,
-        "gameplayTags": [
-          "Cosmetics.Pickaxe.OneHanded",
-          "Cosmetics.Filter.Season.22",
-          "Cosmetics.Set.MainStake",
-          "Cosmetics.Source.ItemShop"
-        ],
-        "metaTags": null,
-        "showcaseVideo": null,
-        "dynamicPakId": null,
-        "displayAssetPath": null,
-        "definitionPath": "FortniteGame/Content/Athena/Items/Weapons/Weapon_Pickaxe_Genius_Blob",
-        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/PickAxes/Pickaxe_Genius_Blob",
-        "added": "2022-10-18T23:49:57Z",
-        "shopHistory": [
-          "2022-10-18T00:00:00Z",
-          "2022-10-19T00:00:00Z",
-          "2022-10-20T00:00:00Z",
-          "2022-10-21T00:00:00Z",
-          "2022-10-22T00:00:00Z",
-          "2022-10-23T00:00:00Z",
-          "2022-10-24T00:00:00Z",
-          "2022-10-25T00:00:00Z",
-          "2022-10-26T00:00:00Z",
-          "2022-10-27T00:00:00Z",
-          "2022-10-28T00:00:00Z",
-          "2022-10-29T00:00:00Z",
-          "2022-10-30T00:00:00Z",
-          "2022-10-31T00:00:00Z",
-          "2022-11-01T00:00:00Z",
-          "2022-11-02T00:00:00Z",
-          "2022-11-03T00:00:00Z",
-          "2022-11-04T00:00:00Z",
-          "2022-11-05T00:00:00Z",
-          "2022-11-06T00:00:00Z",
-          "2022-11-07T00:00:00Z",
-          "2022-11-08T00:00:00Z",
-          "2022-11-09T00:00:00Z",
-          "2022-11-10T00:00:00Z",
-          "2022-11-11T00:00:00Z",
-          "2022-11-12T00:00:00Z",
-          "2022-11-13T00:00:00Z",
-          "2022-11-14T00:00:00Z",
-          "2022-12-01T00:00:00Z",
-          "2022-12-02T00:00:00Z",
-          "2022-12-03T00:00:00Z",
-          "2022-12-04T00:00:00Z",
-          "2022-12-05T00:00:00Z",
-          "2022-12-06T00:00:00Z",
-          "2022-12-07T00:00:00Z",
-          "2022-12-08T00:00:00Z",
-          "2022-12-09T00:00:00Z",
-          "2022-12-10T00:00:00Z",
-          "2022-12-11T00:00:00Z",
-          "2022-12-12T00:00:00Z",
-          "2022-12-13T00:00:00Z",
-          "2022-12-14T00:00:00Z",
-          "2023-09-03T00:00:00Z",
-          "2023-09-04T00:00:00Z",
-          "2023-09-05T00:00:00Z",
-          "2023-09-06T00:00:00Z",
-          "2023-09-07T00:00:00Z",
-          "2023-09-08T00:00:00Z",
-          "2023-10-17T00:00:00Z",
-          "2023-10-18T00:00:00Z",
-          "2023-10-19T00:00:00Z",
-          "2023-10-20T00:00:00Z"
-        ]
-      },
-      {
-        "id": "Glider_GeniusBlob",
-        "name": "Meeseeks Manifest",
-        "description": "All done!",
-        "type": {
-          "value": "glider",
-          "displayValue": "Glider",
-          "backendValue": "AthenaGlider"
-        },
-        "rarity": {
-          "value": "rare",
-          "displayValue": "Rare",
-          "backendValue": "EFortRarity::Rare"
-        },
-        "series": null,
-        "set": {
-          "value": "Mr. Meeseeks",
-          "text": "Part of the Mr. Meeseeks set.",
-          "backendValue": "MainStake"
-        },
-        "introduction": {
-          "chapter": "3",
-          "season": "4",
-          "text": "Introduced in Chapter 3, Season 4.",
-          "backendValue": 22
-        },
-        "images": {
-          "smallIcon": "https://fortnite-api.com/images/cosmetics/br/glider_geniusblob/smallicon.png",
-          "icon": "https://fortnite-api.com/images/cosmetics/br/glider_geniusblob/icon.png",
-          "featured": "https://fortnite-api.com/images/cosmetics/br/glider_geniusblob/featured.png",
-          "other": null
-        },
-        "variants": null,
-        "searchTags": null,
-        "gameplayTags": [
-          "Cosmetics.Filter.Season.22",
-          "Cosmetics.Set.MainStake",
-          "Cosmetics.Source.ItemShop"
-        ],
-        "metaTags": null,
-        "showcaseVideo": null,
-        "dynamicPakId": null,
-        "displayAssetPath": null,
-        "definitionPath": null,
-        "path": "FortniteGame/Plugins/GameFeatures/BRCosmetics/Content/Athena/Items/Cosmetics/Gliders/Glider_GeniusBlob",
-        "added": "2022-10-18T23:49:57Z",
-        "shopHistory": [
-          "2022-10-18T00:00:00Z",
-          "2022-10-19T00:00:00Z",
-          "2022-10-20T00:00:00Z",
-          "2022-10-21T00:00:00Z",
-          "2022-10-22T00:00:00Z",
-          "2022-10-23T00:00:00Z",
-          "2022-10-24T00:00:00Z",
-          "2022-10-25T00:00:00Z",
-          "2022-10-26T00:00:00Z",
-          "2022-10-27T00:00:00Z",
-          "2022-10-28T00:00:00Z",
-          "2022-10-29T00:00:00Z",
-          "2022-10-30T00:00:00Z",
-          "2022-10-31T00:00:00Z",
-          "2022-11-01T00:00:00Z",
-          "2022-11-02T00:00:00Z",
-          "2022-11-03T00:00:00Z",
-          "2022-11-04T00:00:00Z",
-          "2022-11-05T00:00:00Z",
-          "2022-11-06T00:00:00Z",
-          "2022-11-07T00:00:00Z",
-          "2022-11-08T00:00:00Z",
-          "2022-11-09T00:00:00Z",
-          "2022-11-10T00:00:00Z",
-          "2022-11-11T00:00:00Z",
-          "2022-11-12T00:00:00Z",
-          "2022-11-13T00:00:00Z",
-          "2022-11-14T00:00:00Z",
-          "2022-12-01T00:00:00Z",
-          "2022-12-02T00:00:00Z",
-          "2022-12-03T00:00:00Z",
-          "2022-12-04T00:00:00Z",
-          "2022-12-05T00:00:00Z",
-          "2022-12-06T00:00:00Z",
-          "2022-12-07T00:00:00Z",
-          "2022-12-08T00:00:00Z",
-          "2022-12-09T00:00:00Z",
-          "2022-12-10T00:00:00Z",
-          "2022-12-11T00:00:00Z",
-          "2022-12-12T00:00:00Z",
-          "2022-12-13T00:00:00Z",
-          "2022-12-14T00:00:00Z",
-          "2023-09-03T00:00:00Z",
-          "2023-09-04T00:00:00Z",
-          "2023-09-05T00:00:00Z",
-          "2023-09-06T00:00:00Z",
-          "2023-09-07T00:00:00Z",
-          "2023-09-08T00:00:00Z",
-          "2023-10-17T00:00:00Z",
-          "2023-10-18T00:00:00Z",
-          "2023-10-19T00:00:00Z",
-          "2023-10-20T00:00:00Z"
-        ]
-      }
-    ]
-  }
+      "landingPriority": 1
+  },
+  "groupIndex": 0,
+  "storeName": "BRWeeklyStorefront",
+  "tileSize": "Normal",
+  "categories": []
+},

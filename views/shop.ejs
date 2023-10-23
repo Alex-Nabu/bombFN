@@ -19,9 +19,8 @@
             var IsLogged=false; Url="/shop";
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-
+        <script src="https://fortnite.gg/data/items/all-v2.en.js"></script>
         <script src="js/global.js" type="text/javascript"></script>
-        <script src="js/item-shop.js"></script>
     </head>
     <body>
         <!-- <div class="modal-wrap"></div> -->
@@ -76,35 +75,36 @@
                     <a href="#" class="filter">Longest Wait</a>
                 </div>
             </div>
-            <div class="shopItemGuard">
-                <script>createItems()</script>
-            </div>
             <% cards.forEach((ele, idx) => { %>
                 <h2 style="margin:15px 0 10px"><%= ele[0].section.name %></h2>
                 <div class="fn-items" style="grid-gap:16px 8px;margin-bottom:30px">
-                <% ele.forEach((cell, jdx) => { %>
-                    <div class="fn-item">
-                        <a href="/cosmetics?id=<%= cell.offerId.slice(4) %>" data-id="<%= cell.offerId.slice(4) %>" class="js-modal-item fn-item-wrap" style="border:none">
-                            <% if (cell.newDisplayAsset == null){ %>
-                                <img class="img" src="<%= cell.items[0].images.icon %>" alt="Fortnite Item Shop MR. MEESEEKS BUNDLE" loading="lazy">
-                            <% } else if (cell.newDisplayAsset.materialInstances.length > 1){ %>
-                                <img class="img" src="<%= cell.newDisplayAsset.materialInstances[0].images.Background %>" alt="Fortnite Item Shop MR. MEESEEKS BUNDLE" loading="lazy">
-                            <%} else {%>
-                                <img class="img" src="<%= cell.newDisplayAsset.materialInstances[0].images.Background %>" alt="Fortnite Item Shop MR. MEESEEKS BUNDLE" loading="lazy">
-                            <% } %>
-                            <div class="fn-item-bottom">
-                                <% if (cell.bundle != null){ %>
-                                    <h3 class="fn-item-name"><%= cell.bundle.name %></h3>
-                                <% } else if (cell.bundle == null){ %>
-                                    <h3 class="fn-item-name"><%= cell.items[0].name %></h3>
+                    <% ele.forEach((cell, jdx) => { %>
+                        <div class="fn-item">
+                            <a href="/cosmetics?id=<%= cell.displayName %>" data-id="<%= cell.displayName %>" class="js-modal-item fn-item-wrap" style="border:none">
+                                <% if(cell.displayAssets.length != 1) { cell.displayAssets.forEach((sub,kdx) => { %>
+                                    <% if(sub.background !== null){ %>
+                                        <img class="img" src="<%= sub.background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
+                                    <% } else { %>
+                                        <img class="img" src="<%= sub.url %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
+                                    <% } %>
+                                <% }) } else { %>
+                                    <div class="shop-slider" data-id="<%= cell.mainId %>" data-imgs="2" data-v="92" data-alt="Fortnite Item Shop Queen Summer">
+                                        <% if(cell[0].displayAssets.background !== null){ %>
+                                            <img class="img" src="<%= cell.displayAssets[0].background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
+                                        <% } else { %>
+                                            <img class="img" src="<%= cell.displayAssets[0].url %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
+                                        <% } %>
+                                    </div>
                                 <% } %>
-                                <div class="fn-item-price">
-                                    $ <%= cell.finalPrice %>
+                                <div class="fn-item-bottom">
+                                    <h3 class="fn-item-name"><%= cell.displayName %></h3>
+                                    <div class="fn-item-price">
+                                        $ <%= cell.price.finalPrice %>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                <% }) %>
+                            </a>
+                        </div>
+                    <% }) %>
                 </div>
             <% }) %>
 
@@ -150,7 +150,6 @@
         <div>
                 
         <script src="js/shop.js"></script>
-        
         <script src="js/item-details.js" type="text/javascript"></script>
         <script src="js/rocket-loader.min.js"></script>
         <script src="js/test.js"></script>

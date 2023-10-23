@@ -10,7 +10,7 @@ async function mdl_itemDetail(req, res, next) {
     } catch (error) {
         console.error("Error fetching data:", error);
         // res.status(500).err("")
-        next();
+        next()
     }
 }
 

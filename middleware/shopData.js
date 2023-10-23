@@ -33,7 +33,6 @@ async function landingArr() {
       res.push(items[i].section.index);
     }
   }
-  console.log(items)
   var result = [];
   for (var i = 0; i < res.length; i++) {
     var tmp_arr = [];
@@ -56,8 +55,7 @@ async function getById(id) {
 
 async function mdl_shopData(req, res, next) {
   try {
-    req.items = await landingArr()
-    console.log(req.items)
+    req.items = JSON.stringify(await landingArr())
     next();
   } catch (error) {
     
