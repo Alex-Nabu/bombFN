@@ -49,16 +49,16 @@ async function landingArr() {
 }
 
 exports.getShopPage = async function (req, res) {
-  var items = await landingArr()
-  try {
-    res.render("shop", {
-      title: "This is my test.",
-      filterStt: "landing",
-      cards: items,
-    });
-  } catch (error) {
-    console.log("Error shopController/getShopPage");
-  }
+    var items = await landingArr()
+    try {
+      res.render("shop", {
+        title: "BOMBFN",
+        filterStt: "landing",
+        cards: items,
+      });
+    } catch (error) {
+      console.log("Error shopController/getShopPage");
+    }
 };
 
 exports.getWebmanifest = function (req, res) {
@@ -92,13 +92,13 @@ exports.getItemDetails = async function (req, res) {
 
 exports.getMapPage = async function (req, res) {
   res.render("index", {
-    title: "",
+    title: "BOMBFN",
   });
 };
 
 exports.getCosmeticsPage = function (req, res) {
   res.render("cosmetics", {
-    title: "",
+    title: "BOMBFN",
     filter: "default",
     item: "",
   });

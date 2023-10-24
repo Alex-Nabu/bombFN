@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <title><%= title %></title> -->
+        <title><%= title %></title>
         <meta name="description" content="See what's in today's Fortnite Item Shop right now, all Fortnite skins, special offers &amp; bundles, shop history, your wishlisted cosmetics and more!">
         <meta name="theme-color" content="#2f3136">
         <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -12,7 +12,6 @@
         <link rel="manifest" href="site.webmanifest">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Fortnite.GG">
-
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/shop.css">
         <script type="text/javascript">
@@ -32,7 +31,13 @@
                   </div>
             </div>
             <div class="header-sac">
-                <span class="partner">#ad</span> code <span class="fngg">FNGG</span>
+                <span class="partner">#ad</span> code 
+                <div class="nav-item-wrap">
+                    <a class="nav-item fngg">xdmhtsos</a>
+                    <div class="nav-item-dropdown">
+                      <a class="nav-item" onclick="copyToClipboard('Hello, World!')">Copy Text</a>
+                    </div>
+                  </div>
             </div>
             <nav class="header-menu">
                 <div class="nav-item-wrap">
@@ -55,7 +60,7 @@
                   </h3>
                   <div class="next-rotation-sections"></div>
                 </div>
-                <div class="filters">
+                <!-- <div class="filters">
                     <a href="#" class="filter active">
                         <span>0</span> All </a>
                     <a href="#" class="filter">
@@ -73,7 +78,7 @@
                     <a href="#" class="filter">
                         <span>0</span> Gliders </a>
                     <a href="#" class="filter">Longest Wait</a>
-                </div>
+                </div> -->
             </div>
             <% cards.forEach((ele, idx) => { %>
                 <h2 style="margin:15px 0 10px"><%= ele[0].section.name %></h2>
@@ -81,20 +86,10 @@
                     <% ele.forEach((cell, jdx) => { %>
                         <div class="fn-item">
                             <a href="/cosmetics?id=<%= cell.displayName %>" data-id="<%= cell.displayName %>" class="js-modal-item fn-item-wrap" style="border:none">
-                                <% if(cell.displayAssets.length != 1) { cell.displayAssets.forEach((sub,kdx) => { %>
-                                    <% if(sub.background !== null){ %>
-                                        <img class="img" src="<%= sub.background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
-                                    <% } else { %>
-                                        <img class="img" src="<%= sub.url %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
-                                    <% } %>
-                                <% }) } else { %>
-                                    <div class="shop-slider" data-id="<%= cell.mainId %>" data-imgs="2" data-v="92" data-alt="Fortnite Item Shop Queen Summer">
-                                        <% if(cell[0].displayAssets.background !== null){ %>
-                                            <img class="img" src="<%= cell.displayAssets[0].background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
-                                        <% } else { %>
-                                            <img class="img" src="<%= cell.displayAssets[0].url %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
-                                        <% } %>
-                                    </div>
+                                <% if(cell.displayAssets[0].background !== null){ %>
+                                    <img class="img" src="<%= cell.displayAssets[0].background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
+                                <% } else { %>
+                                    <img class="img" src="<%= cell.displayAssets[0].background %>" alt="<%= cell.displayName %> for <%= cell.price.finalPrice %> V-Bucks" loading="lazy">
                                 <% } %>
                                 <div class="fn-item-bottom">
                                     <h3 class="fn-item-name"><%= cell.displayName %></h3>
@@ -108,7 +103,7 @@
                 </div>
             <% }) %>
 
-            <div style="text-align:center">
+            <!-- <div style="text-align:center">
                 <div style="margin:15px 0">
                     <label class="checkbox-label">
                         <div class="checkbox-title">Show ratings</div>
@@ -146,7 +141,7 @@
                     , and new items may be added.
                 </p>
                 <p>Check back to see what's new!</p>
-            </div>
+            </div> -->
         <div>
                 
         <script src="js/shop.js"></script>
