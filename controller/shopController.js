@@ -7,7 +7,7 @@ async function getDataFromAPI() {
       throw new Error("Network response was not ok");
     }
     const data = await response.json();
-    return data.shop
+    return data.shop;
     // return data.data.featured.entries;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -17,48 +17,48 @@ async function getDataFromAPI() {
 
 async function landingArr() {
   var items = await getDataFromAPI();
-  var res = []
+  var res = [];
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     var stt = 0;
-    if( i == 0){
-      res.push((items[i].section.name + items[i].section.landingPriority))
+    if (i == 0) {
+      res.push(items[i].section.name + items[i].section.landingPriority);
     }
     for (let j = 0; j < res.length; j++) {
       const idx = res[j];
-      if(idx == (items[i].section.name + items[i].section.landingPriority)){
-        stt ++;
+      if (idx == items[i].section.name + items[i].section.landingPriority) {
+        stt++;
       }
     }
-    if(stt == 0) {
-      res.push((items[i].section.name + items[i].section.landingPriority))
+    if (stt == 0) {
+      res.push(items[i].section.name + items[i].section.landingPriority);
     }
   }
 
-  var result = []
-  for(var i = 0; i < res.length; i ++){
-      var tmp_arr = []
-      for(var j = 0; j < items.length; j ++){
-          if(res[i] == (items[j].section.name + items[j].section.landingPriority)){
-              tmp_arr.push(items[j])
-          }
+  var result = [];
+  for (var i = 0; i < res.length; i++) {
+    var tmp_arr = [];
+    for (var j = 0; j < items.length; j++) {
+      if (res[i] == items[j].section.name + items[j].section.landingPriority) {
+        tmp_arr.push(items[j]);
       }
-      result.push(tmp_arr);
+    }
+    result.push(tmp_arr);
   }
   return result;
 }
 
 exports.getShopPage = async function (req, res) {
-    var items = await landingArr()
-    try {
-      res.render("shop", {
-        title: "BOMBFN",
-        filterStt: "landing",
-        cards: items,
-      });
-    } catch (error) {
-      console.log("Error shopController/getShopPage");
-    }
+  var items = await landingArr();
+  try {
+    res.render("shop", {
+      title: "BOMBFN",
+      filterStt: "landing",
+      cards: items,
+    });
+  } catch (error) {
+    console.log("Error shopController/getShopPage");
+  }
 };
 
 exports.getWebmanifest = function (req, res) {
@@ -87,7 +87,7 @@ exports.getWebmanifest = function (req, res) {
 };
 
 exports.getItemDetails = async function (req, res) {
-    res.send(req.item);
+  res.send(req.item);
 };
 
 exports.getMapPage = async function (req, res) {
@@ -103,3 +103,27 @@ exports.getCosmeticsPage = function (req, res) {
     item: "",
   });
 };
+
+exports.getAboutPage = function (req, res) {
+  res.render("about", {
+    title: "BOMBFN"
+  })
+}
+
+exports.getPrivacyPage = function (req, res) {
+  res.render("privacy", {
+    title: "BOMBFN"
+  })
+}
+
+exports.getTermsPage = function (req, res) {
+  res.render("terms", {
+    title: "BOMBFN"
+  })
+}
+
+exports.getContactUs = function (req, res) {
+  res.render("contact", {
+    title: "BOMBFN"
+  })
+}

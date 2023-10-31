@@ -39,9 +39,9 @@ function() {
                 break;
             v++;
             var l = document.createElement("a");
-            l.href = "/cosmetics?id=" + o.id,
+            l.href = "/cosmetics?id=" + o.name,
             l.className = "item-icon",
-            l.dataset.id = o.id,
+            l.dataset.id = o.name,
             l.addEventListener("click", function(e) {
                 e.preventDefault(),
                 e.target && ("item-add-my-btn" === e.target.className || "item-del-my-btn" === e.target.className) || modal(this.dataset.id, "item")

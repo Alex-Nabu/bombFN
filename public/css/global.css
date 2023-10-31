@@ -882,7 +882,7 @@
   }
   .fn-item a:hover,
   .fn-item-wrap:hover {
-    box-shadow: 0 0 0 5px #fff;
+    box-shadow: 0 0 0 5px #ff6a6a;
     overflow: hidden;
   }
   .fn-item .img,
@@ -2060,4 +2060,19 @@
   padding-left: 3px;
   padding-top: 11px;
   color: #ff6a6a;
+}
+
+.item-add-my-btn{
+  background-color: var(--fngg-yellow);
+  color: white;
+}
+
+.item-icon-name{
+  background-color: var(--fngg-yellow);
+  color: white;
+}
+
+.item-icon:hover {
+  outline: 0;
+  box-shadow: 0 0 0 5px #ff6a6a;
 }

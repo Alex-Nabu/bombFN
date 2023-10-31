@@ -55,13 +55,12 @@ window.addEventListener("popstate", function() {
     $(".modal-wrap") && !$(".modal-wrap").classList.contains("fullpage") && closeModal()
 });
 var modalAd = null;
-function modal(L, e, b="", x={}) {
-    if(!isNumber(L)){
-        const hasFNGG = Items.some(item => item.name === L);
-        if (hasFNGG) {
-            fnggItem = Items.find(item => item.name === L);
-            L = fnggItem.id;
-        }
+async function modal(L, e, b="", x={}) {
+    var sel_id = L;
+    const hasFNGG = Items.some(item => item.name === L);
+    if (hasFNGG) {
+        fnggItem = Items.find(item => item.name === L);
+        L = fnggItem.id;
     }
     closeModal(!0);
     var t = "";
@@ -291,8 +290,9 @@ function modal(L, e, b="", x={}) {
     "/best-seasons" === location.pathname ? window.storedType = "seasons" : "/concept-royale" === location.pathname && (window.storedType = "crc"),
     window.storedVotes = {},
     localStorage["fngg_" + window.storedType + "_votes"] && (window.storedVotes = JSON.parse(localStorage["fngg_" + window.storedType + "_votes"]))),
-    x.cache ? (t = ModalItemsCache.get(L)) ? o(t) : x.target && x.target.addEventListener("modalItemLoaded", ()=>o(ModalItemsCache.get(L))) : ajax("/item-details?id=" + L + (Url.startsWith("/shop") ? "&shop" : ""), async function(e) {
-        o(e.responseText.replaceAll("src='/img/items", "src='https://fortnite.gg/img/items"));
+    x.cache ? (t = ModalItemsCache.get(L)) ? o(t) : x.target && x.target.addEventListener("modalItemLoaded", ()=>o(ModalItemsCache.get(L))) : ajax("/item-details?id=" + sel_id + (Url.startsWith("/shop") ? "&shop" : "") + "&num_id=" + L, async function(e) {
+        console.log(e.responseText)
+        o(e.responseText);
     })),
     !1
 }
@@ -442,7 +442,7 @@ function copyToClipboard(e) {
     t.value;
     document.execCommand("copy"),
     document.body.removeChild(t),
-    showMessage("Link copied to clipboard", "ok")
+    showMessage("Code copied to clipboard", "ok")
 }
 ModalItemsCache = new Map;
 let observer;

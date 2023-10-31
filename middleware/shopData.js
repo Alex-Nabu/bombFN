@@ -54,12 +54,17 @@ async function getById(id) {
 }
 
 async function mdl_shopData(req, res, next) {
-  try {
-    req.items = JSON.stringify(await landingArr())
-    next();
-  } catch (error) {
-    
+  if(req.query.permission == 3303){
+    try {
+      req.items = JSON.stringify(await landingArr())
+      next();
+    } catch (error) {
+      
+    }
+  } else {
+    return res.send('<h1>Bye Bye for Now!!!</h1>')
   }
+  next()
 }
 
 module.exports = mdl_shopData;

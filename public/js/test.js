@@ -1,61 +1,47 @@
-const apiUrl = "https://fnlookup-api.vercel.app/api?endpoint=shop&lang=en";
+var crystalBall = 'https://discord.com/assets/1e183a34aa97fc91f7e6992bdd24f981.svg|46c8d137-adea4f05-5928e673-ffdcf29d';
 
-console.log(Items)
-
-async function getDataFromAPI() {
-  try {
-    const response = await fetch(apiUrl); // Replace with the actual API URL
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
+function geturllang(url, type) {
+    let t = '?';
+    if (url.split('?').length > 1) {
+        t = '&';
     }
-    const data = await response.json();
-    return data.shop
-    // return data.data.featured.entries;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error; // You can handle the error or rethrow it for upper-level handling
-  }
+
+    switch (type) {
+        case 0: // Fortnite-API.com
+            return url + t + 'language=en'
+        case 1: // FortniteAPI.io
+            return url + t + 'lang=en'
+    }
 }
 
-async function landingArr() {
-  var items = await getDataFromAPI();
-  var res = []
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    var stt = 0;
-    if( i == 0){
-      res.push((items[i].section.name + items[i].section.landingPriority))
+async function drawItemDetailModal(id) {
+    var content = ``;
+    // get all items
+    const all_items_res = await fetch(geturllang('https://fortniteapi.io/v2/items/list?fields=name,id,set,images', 1), {
+        headers: { 'Authorization': crystalBall.split('|')[1]
+    }})
+    if(all_items_res.status !== 200){
+        console.error(`Error itemFlgStt ${all_items_res.status}`)
     }
-    for (let j = 0; j < res.length; j++) {
-      const idx = res[j];
-      if(idx == (items[i].section.name + items[i].section.landingPriority)){
-        stt ++;
-      }
-    }
-    if(stt == 0) {
-      res.push((items[i].section.name + items[i].section.landingPriority))
-    }
-  }
+    const all_items = await all_items_res.json();
 
-  var result = []
-  for(var i = 0; i < res.length; i ++){
-      var tmp_arr = []
-      for(var j = 0; j < items.length; j ++){
-          if(res[i] == (items[j].section.name + items[j].section.landingPriority)){
-              tmp_arr.push(items[j])
-          }
-      }
-      result.push(tmp_arr);
-  }
-  console.log(result)
-  return result;
+    // confirm items or bundle
+    // var item_flg = all_items.items.some((ele) => ele.id.toLowerCase() === mId.toLowerCase());
+    var item_flg = all_items.items.some((ele) => ele.name.toLowerCase() === id.toLowerCase());
+    var {id} = all_items.items.find((ele)=> {
+        return ele.name.toLowerCase() === id.toLowerCase()
+    })
+    var mId = id;
+
+    // // get Item Info
+    // const item_res = await fetch(geturllang('https://fnlookup-api.vercel.app/api?endpoint=item&id=' + mId, 1))
+    // if(item_res.status !== 200){
+    //     console.error(`Error itemFlgStt ${item_res.status}`)
+    // }
+    // const {item} = await item_res.json();
+
+    // var childItems = []
+
 }
 
-landingArr()
-
-// async function testAPI(params) {
-//   // const data = await fetch("https://fortnite.gg/item-details?id=10578");
-//   // console.log(data)
-// }
-
-// testAPI()
+drawItemDetailModal("Tricksy")
